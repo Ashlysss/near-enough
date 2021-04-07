@@ -1,0 +1,24 @@
+{
+  "name": "near-enough",
+  "version": "1.0.0",
+  "description": "dApp for sub-contractors to be paid for completed work issued by a contractor. If not completed on time funds are not paid",
+  "main": "index.js",
+  "scripts": {
+    "test": "asp",
+    "build": "asb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShaneUP1/near-enough.git"
+  },
+  "author": "spalmer, supchurch, ashyss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShaneUP1/near-enough/issues"
+  },
+  "homepage": "https://github.com/ShaneUP1/near-enough#readme",
+  "devDependencies": {
+    "add": "^2.0.6",
+    "near-sdk-as": "^3.1.0"
+  }
+}
