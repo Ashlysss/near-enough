@@ -58,7 +58,7 @@ export function createJob(
   complete: Boolean,
   proof: String,
   value: u128,
-  due: u64
+  due: Date
 ): void {
   assert(value > u128.Zero, ERR_INVALID_AMOUNT);
   assert(due > context.blockTimestamp, ERR_INVALID_TIME);
