@@ -79,6 +79,11 @@ as-bignum@^0.2.15:
   resolved "https://registry.yarnpkg.com/as-bignum/-/as-bignum-0.2.15.tgz#34c9787d096943a8d3ded5ef3a89844bce27b2ac"
   integrity sha512-pGUyKIQ/KQa5L44IStjuZLJPJAPeuFK6SvlhlhTIvqMHdc2OTfxJbWaz4Zx2dczOMaOq8ohPAMa/qq1N+k3yQg==
 
+as-wasi@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/as-wasi/-/as-wasi-0.4.4.tgz#3b439c25e975d8cc04f6deec898b57138862aa15"
+  integrity sha512-CNeZ3AjKSjrFXRNDRzX1VzxsWz3Fwksn4g0J7tZv5RKz4agKhVlcl0QeMIOOkJms7DujCBCpbelGxNDtvlFKmw==
+
 asbuild@^0.0.11:
   version "0.0.11"
   resolved "https://registry.yarnpkg.com/asbuild/-/asbuild-0.0.11.tgz#45890d205b193eeeceb68e4154427b5ccaa69058"

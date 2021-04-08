@@ -20,5 +20,8 @@
   "devDependencies": {
     "add": "^2.0.6",
     "near-sdk-as": "^3.1.0"
+  },
+  "dependencies": {
+    "as-wasi": "^0.4.4"
   }
 }

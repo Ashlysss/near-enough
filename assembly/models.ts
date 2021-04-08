@@ -1,5 +1,6 @@
 import { u128 } from 'near-sdk-as';
 
+
 export type AccountId = string;
 export type JobId = u64;
 
@@ -16,3 +17,5 @@ export class Job {
     public due: u64
   ) { }
 }
+
+
