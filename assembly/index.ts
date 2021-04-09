@@ -40,6 +40,9 @@ const jobList = new PersistentMap<JobId,AccountId >('jl');
 
 const appliedList = new PersistentMap<JobId, PersistentVector<AccountId>>('ajl');
 
+//added to get list of jobs per company
+const accountList = new PersistentMap<AccountId, PersistentVector<JobId>>('cl');
+
 const inProgressList = new PersistentMap<JobId, AccountId>('ipjl');
 
 
@@ -83,6 +86,12 @@ export function createJob(
 
   logging.log('Creating job ' + job.id.toString());
   jobList.set(job.id,context.sender);
+  let jobPerAccount = new PersistentVector<JobId>('c');
+  if(accountList.contains(context.sender)){
+    jobPerAccount=accountList.getSome(context.sender);
+  }
+  jobPerAccount.push(job.id);
+  accountList.set(context.sender,jobPerAccount);
   jobs.set(job.id, job);
   const userJobsList = userJobs.get(context.predecessor, [])!;
   userJobsList.push(job.id);
